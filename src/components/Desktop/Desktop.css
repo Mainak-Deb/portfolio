@@ -3,4 +3,17 @@
     height: 100vh;
     position: absolute;
     background-color: black;
+    overflow-y: hidden;
+}
+
+.top {
+    position: absolute;
+    height:25px;
+    top: 0;
+    width: 100vw;
+    background-color: rgb(42, 49, 90);
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
