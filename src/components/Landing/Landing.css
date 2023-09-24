@@ -1,0 +1,41 @@
+#main-landing{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+#codespace {
+    z-index: -2;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    text-align: left;
+    background: rgb(2,0,36);
+    background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(7,6,93,1) 0%, rgba(7,6,93,1) 16%, rgba(0,0,0,1) 100%);
+    color: greenyellow;
+    font-size: max(15px,2vw);
+    word-wrap: break-word;
+    filter:blur(3px);
+    letter-spacing: 4px; 
+}
+
+#blurcode{
+    z-index: 0;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    text-align: left;
+    filter:blur(10px);
+}
+
+#nameplate{
+    font-size: 10vw;
+    font-weight: 800;
+    color: rgb(0, 0, 0);
+    opacity: 0.8;
+    font-family: "Audiowide", sans-serif; 
+    text-shadow: 0 0 20px rgba(255, 255, 255, 1), 0 0 30px rgba(255, 255, 255, 1);
+}
