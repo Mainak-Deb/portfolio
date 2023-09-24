@@ -1,13 +1,13 @@
 import React, { useEffect, useRef, useState } from "react";
 import "./Landing.css";
 
-const Landing = () => {
+const Landing = ({sethomepage}) => {
   const [code, setcode] = useState("");
   const opref = useRef(null);
 
   useEffect(() => {
     var opacity = 0;
-    var scale = 400;
+    var scale = 200;
     var d=4;
     const opelement = opref.current;
 
@@ -21,11 +21,17 @@ const Landing = () => {
       scale = Math.max(1, scale - d);
       d=Math.max(1,d-0.01)
 
+
       setcode((prevText) => randomChar);
     }, 50);
 
+    const intervalId2=setInterval(() => {
+        sethomepage(true)
+    }, 5000);
+
     return () => {
       clearInterval(intervalId1);
+      clearInterval(intervalId2);
     };
 
 

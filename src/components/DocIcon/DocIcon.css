@@ -1,0 +1,13 @@
+.docicon{
+    width: 50px;
+    height: 50px;
+    background-color: aliceblue;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border: 1px solid white;
+    cursor: pointer;
+}
+.docicon:hover{
+    transform: scale(1.1);
+}
+
