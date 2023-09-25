@@ -1,0 +1,11 @@
+.msg-section{
+    background-color: #ffb134;
+    color: white;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: move;
+    border-radius: 20px;
+}

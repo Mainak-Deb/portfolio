@@ -9,7 +9,7 @@ import { AiOutlineCode } from "react-icons/ai";
 import { MdSms } from "react-icons/md";
 
 
-const Doc = () => {
+const Doc = (props) => {
 
     const profileStyle = {
         color: 'pink',
@@ -66,12 +66,12 @@ const Doc = () => {
   return (
     <div className='doc-container'>
     <div   className='doc'>
-        <DocIcon  name={"profile"} ><CgProfile style={profileStyle}  /></DocIcon>
-        <DocIcon><GiOfficeChair style={jobStyle}/></DocIcon>
-        <DocIcon><FaTools style={devStyle}/>  </DocIcon>
-        <DocIcon><AiOutlineCode style={skillStyle}/> </DocIcon>
-        <DocIcon><MdSms  style={msgStyle} /></DocIcon>
-        <DocIcon><PiLinkSimpleBold style={linkStyle}/></DocIcon>
+        <DocIcon openWindow={props.openWindow}  closeWindow={props.closeWindow} name={"profile"} ><CgProfile style={profileStyle}  /></DocIcon>
+        <DocIcon openWindow={props.openWindow}  closeWindow={props.closeWindow} name={"job"}><GiOfficeChair style={jobStyle}/></DocIcon>
+        <DocIcon openWindow={props.openWindow}  closeWindow={props.closeWindow}   name={"dev"}><FaTools style={devStyle}/>  </DocIcon>
+        <DocIcon openWindow={props.openWindow}  closeWindow={props.closeWindow} name={"skill"} ><AiOutlineCode style={skillStyle}/> </DocIcon>
+        <DocIcon openWindow={props.openWindow}  closeWindow={props.closeWindow}  name={"msg"}><MdSms  style={msgStyle} /></DocIcon>
+        <DocIcon openWindow={props.openWindow}  closeWindow={props.closeWindow} name={"links"} ><PiLinkSimpleBold style={linkStyle}/></DocIcon>
     </div>
     </div>
   )
