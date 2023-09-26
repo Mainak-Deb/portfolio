@@ -4,10 +4,12 @@
     width: 100%;
     backdrop-filter: blur(16px) saturate(180%);
     -webkit-backdrop-filter: blur(6px) saturate(180%);
-    background-color: rgba(255, 255, 255, 0.25);
+    background-color: rgba(255, 255, 255, 0.207);
     border-radius: 20px;
     height: 100%;
-    z-index: 50;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    z-index: 10;
 }
 
 
@@ -18,7 +20,7 @@
     background-color: rgba(66, 62, 62, 0);
     border-radius: 20px 20px 0px 0px;
     padding: 5px 0px;
-    
+    color: aliceblue;
 }
 
 .but{

@@ -8,6 +8,8 @@ import Dev from '../Windows/Dev/Dev';
 import Links from '../Windows/Links/Links';
 import Profile from '../Windows/Profile/Profile';
 import Msg from '../Windows/Msg/Msg';
+import myimg from '../../images/mainak_border-removebg-preview.png'
+
 
 var Desktop = () => {
 
@@ -155,16 +157,15 @@ var Desktop = () => {
     <div id='desktop-body'  > 
     <div className="desktop_text">
     <canvas  id="canvas" ref={canvasRef} />;
-      <div>
+      <div className='desktop-inner-text' >
+        <img src={myimg} className='rounded_img' alt="Description of the image" />
         <h1>Mainak Deb</h1>
         <p>Software Engineer</p>
       </div>
       
     </div>
-
-
-
-
+    <div className="section-for-windows2"> 
+    </div>
     <div className="top">
       <span>{format(time, 'dd MMM yyyy')}</span>
       <span>{format(time, 'HH:mm:ss')}</span>
@@ -178,6 +179,8 @@ var Desktop = () => {
       <Msg open={msgOpen} closeWindow={closeWindow}/>
       <Profile open={profileOpen} closeWindow={closeWindow}/>
     </div>
+
+    
       <Doc  openWindow={openWindow}  closeWindow={closeWindow} ></Doc>
     </div>
   )
