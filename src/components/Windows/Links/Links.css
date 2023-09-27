@@ -1,16 +1,17 @@
+@import url("https://fonts.googleapis.com/css?family=Caveat|Righteous&display=swap");
+
 .links-section{
     background-color: #ffffff65;
     color: white;
     width: 100%;
     height: 100%;
     display: flex;
-    align-items: flex-start;
     flex-direction: column;
-    justify-content: center;
     cursor: move;
     border-radius: 20px;
     backdrop-filter: blur(2px) saturate(180%);
     -webkit-backdrop-filter: blur(2px) saturate(180%);
+    overflow-y: scroll;
 }
 
 .topicons{
@@ -49,7 +50,8 @@
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    background-color: rgb(255, 37, 81);
+    background: rgb(44,250,255);
+background: radial-gradient(circle, rgba(44,250,255,1) 0%, rgba(51,127,255,1) 57%, rgba(61,62,255,1) 100%);
 }
 
 .linkpart{
@@ -58,6 +60,7 @@
     margin: auto;
     height: 100px;
     margin: 10px 0px;
+    background-color: rgba(255, 255, 255, 0.5);
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     display: flex;
     flex-direction: row;
@@ -65,11 +68,30 @@
     align-items: center;
 
 }
+.linkname{
+    width: 80%;
+    font-family: "Caveat", cursive;
+    color: transparent;
+    font-size: 2rem;
+    letter-spacing: 5px;
+}
+.linkname a{
+    text-decoration: none;
+}
 
 .linkicon{
     width: 70px;
     height: 70px;
     border-radius: 50%;
-    background-color: rgb(255, 37, 81);
+    background: rgb(255,0,48);
+background: radial-gradient(circle, rgba(255,0,48,1) 0%, rgba(255,51,202,1) 69%, rgba(233,122,255,1) 100%);
     margin: 0px 20px;
+}
+
+.linkdivs{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
